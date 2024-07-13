@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+@keyframes flames {
+	0% {
+		background-position: top;
+	}
+
+	50% {
+		background-position: bottom;
+	}
+
+	100% {
+		background-position: top;
+	}
+}
+
+/* mobile */
+.home {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.1),
+			rgba(0, 0, 0, 0.9)
+		),
+		url("../../assets/band_on_stage_mobile.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.home__title {
+		/* display: block; */
+		/* width: 100%; */
+		/* height: 100%; */
+		font-family: "Metal Mania", system-ui;
+		background-image: url("../../assets/flame.jpg");
+		background-size: cover;
+		font-size: 6rem;
+		background-clip: text;
+		color: transparent;
+		text-align: center;
+		-webkit-text-stroke: 1px yellow;
+		padding: 1rem 3rem;
+		/* margin-bottom: 7rem; */
+	}
+}
+
+/* desktop */
+@media screen and (min-width: 450px) {
+	.home {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		background-image: linear-gradient(
+				to bottom,
+				rgba(255, 255, 255, 0.1),
+				rgba(0, 0, 0, 0.9)
+			),
+			url("../../assets/band_on_stage.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+
+		.home__title {
+			/* display: block; */
+			/* width: 100%; */
+			/* height: 100%; */
+			font-family: "Metal Mania", system-ui;
+			background-image: url("../../assets/flame.jpg");
+			background-size: cover;
+			/* background-position: center; */
+			font-size: 12rem;
+			background-clip: text;
+			color: transparent;
+			text-align: center;
+			-webkit-text-stroke: 1px yellow;
+			padding: 1rem 3rem;
+			/* margin-bottom: 7rem; */
+			animation: flames 8s linear infinite;
+		}
+	}
+}
