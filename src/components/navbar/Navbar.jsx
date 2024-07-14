@@ -16,9 +16,9 @@ export default function Navbar() {
 
   return (
     <nav className='navbar'>
-        <div className="logo-container">
-            <img src={logo} alt="" className="logo" />
-        </div>
+        {/* <div className="logo-container"> */}
+            {/* <img src={logo} alt="" className="logo" /> */}
+        {/* </div> */}
         <div className="nav-container">
             <Link className="nav-link">Main</Link>
             <Link className="nav-link">Band</Link>

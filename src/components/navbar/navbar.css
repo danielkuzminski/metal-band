@@ -24,7 +24,7 @@
 
 .navbar {
 	/* background-color: transparent; */
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	display: flex;
@@ -33,22 +33,34 @@
 	padding: 2rem;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 
-	.logo-container {
+	/* .logo-container {
+		flex: 1;
 		.logo {
 			width: 4rem;
 			height: 4rem;
 		}
-	}
+	} */
 
 	.nav-container {
 		display: flex;
 		align-items: center;
-		gap: 3rem;
+		gap: 1.5rem;
 		transition: 3s;
+		/* flex: 3; */
 
 		.nav-link {
+			font-family: "Metal Mania", system-ui;
+				background-image: url("../../assets/flame.jpg");
+				background-size: cover;
+				/* background-position: center; */
+				font-size: 1.8rem;
+				background-clip: text;
+				color: transparent;
+				text-align: center;
+				-webkit-text-stroke: 1px yellow;
+				letter-spacing: 0.3rem;
 		}
 
 		.ham {
@@ -65,14 +77,20 @@
 @media screen and (min-width: 450px) {
 	.navbar {
 		background-color: transparent;
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 
 		.logo-container {
+			/* position: absolute; */
+			/* width: 12rem; */
+			/* height: 12rem; */
+
 			.logo {
-				width: 5rem;
-				height: 5rem;
+				/* padding: 2rem; */
+				margin-top: 3rem;
+				width: 10rem;
+				height: 10rem;
 			}
 		}
 
