@@ -30,6 +30,9 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+			<div className="flames">
+				<div className="flames-container"></div>
+			</div>
 		</div>
 	)
 }
