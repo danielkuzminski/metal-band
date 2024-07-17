@@ -14,6 +14,18 @@
 	}
 }
 
+@keyframes adjust {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 /* mobile */
 .home {
 	.landing {
@@ -51,15 +63,20 @@
 
 	.tour {
 		.tour-card {
-			.tour-city {}
-			.tour-date {}
-			.tour-info {}
-			.tour-cta {}
+			.tour-city {
+			}
+			.tour-date {
+			}
+			.tour-info {
+			}
+			.tour-cta {
+			}
 		}
 	}
 
 	.flames {
-		.flames-container {}
+		.flames-container {
+		}
 	}
 }
 
@@ -113,29 +130,30 @@
 			/* min-width: 96rem; */
 			gap: 3rem;
 			flex-wrap: wrap;
-	
+
 			.tour-title {
 				font-family: "Metal Mania", system-ui;
-					background-image: url("../../assets/flame.jpg");
-					background-size: cover;
-					/* background-position: center; */
-					font-size: 5rem;
-					background-clip: text;
-					color: transparent;
-					text-align: center;
-					-webkit-text-stroke: 1px yellow;
-					letter-spacing: 0.3rem;
-					margin: 4rem 0;
+				background-image: url("../../assets/flame.jpg");
+				background-size: cover;
+				/* background-position: center; */
+				font-size: 5rem;
+				background-clip: text;
+				color: transparent;
+				text-align: center;
+				-webkit-text-stroke: 1px yellow;
+				letter-spacing: 0.3rem;
+				margin: 4rem 0;
+				animation: flames 3s linear infinite;
 			}
-	
+
 			.tour-container {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 3rem;
-	
+
 				.tour-card {
 					flex: 1;
-					/* min-width: 25%; */
+					min-width: 25%;
 					margin: 1rem;
 					display: flex;
 					flex-direction: column;
@@ -145,12 +163,18 @@
 					border-radius: 2rem;
 					padding: 5rem;
 					/* margin: 8rem; */
-		
+
 					.tour-city {
 						text-transform: uppercase;
 						font-size: 4rem;
 						margin-bottom: 2rem;
 						text-align: center;
+
+						.fire {
+							display: inline;
+							width: 3rem;
+							height: 3rem;
+						}
 					}
 					.tour-date {
 						text-align: center;
@@ -172,29 +196,69 @@
 						color: #000;
 						background-color: #fff;
 					}
-					
+
 					.tour-cta:hover {
 						color: #fff;
 						background: none;
 					}
 				}
 			}
-	
 		}
 
 		.flames {
 			height: 50vh;
 			background-color: #000;
-			
-			.flames-container{
+
+			.flames-container {
 				object-fit: cover;
 				/* height: 100%; */
-				background-image: url('../../assets/fire.png');
+				background-image: linear-gradient(to bottom, rgba(0, 0, 0,.1), rgb(0, 0, 0, .1), rgb(0, 0, 0)) ,url("../../assets/fire-bg.jpg");
 				height: 100%;
 				background-position: bottom;
 				background-size: cover;
 			}
 		}
-	}
 
+		.album {
+			height: 100vh;
+			width: 100%;
+			background-color: #000;
+			display: flex;
+			flex-direction: column;
+			background-image: url('../../assets/2151073823.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			
+			
+			.album-title {
+				font-family: "Metal Mania", system-ui;
+				background-image: url("../../assets/flame.jpg");
+				background-size: cover;
+				/* background-position: center; */
+				font-size: 5rem;
+				background-clip: text;
+				color: transparent;
+				text-align: center;
+				-webkit-text-stroke: 1px yellow;
+				letter-spacing: 0.3rem;
+				padding: 5rem;
+				/* margin: 4rem 0; */
+				display: flex;
+				justify-content: center;
+				gap: 4rem;
+				animation: flames 3s linear infinite;
+				transition: .3s;
+				.fingers {
+					animation: adjust 2s linear infinite;
+				}
+			}
+			.album-cover {
+				width: 50rem;
+				height: 50rem;
+				margin: 2rem auto;
+				box-shadow: 0 0 2rem yellow;
+			}
+		}
+	}
 }

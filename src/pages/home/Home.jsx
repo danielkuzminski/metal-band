@@ -1,6 +1,11 @@
 //styles
 import "./home.css"
 
+//assets
+import fire from "../../assets/fire.png"
+import heavy from "../../assets/heavy-metal.png"
+import cover from '../../assets/cover.jpeg'
+
 export default function Home() {
 	return (
 		<div className="home">
@@ -11,7 +16,10 @@ export default function Home() {
 				<h2 className="tour-title">Now on tour</h2>
 				<div className="tour-container">
 					<div className="tour-card">
-						<h2 className="tour-city">Gdansk</h2>
+						<h2 className="tour-city">
+							<img className="fire" src={fire} alt="icon of flame" />
+							Gdansk
+						</h2>
 						<p className="tour-date">14-08-2024</p>
 						<p className="tour-info">Gdansk Amber Arena</p>
 						<button className="tour-cta">tickets</button>
@@ -30,9 +38,15 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<div className="flames">
+			<section className="flames">
 				<div className="flames-container"></div>
-			</div>
+			</section>
+			<section className="album">
+				<h2 className="album-title">
+					New Album Out Now <img className="fingers" src={heavy} alt="rock fingers" />
+				</h2>
+				<img src={cover} alt="" className="album-cover" />
+			</section>
 		</div>
 	)
 }
