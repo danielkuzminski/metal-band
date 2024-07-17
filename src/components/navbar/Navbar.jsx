@@ -23,7 +23,7 @@ export default function Navbar() {
             <Link className="nav-link">Main</Link>
             <Link className="nav-link">Band</Link>
             <Link className="nav-link">Retail</Link>
-            <Link className="nav-link">Subscribe</Link>
+            <Link className="nav-link">Merch</Link>
             <img src={ham} alt="" className='ham' />
         </div>
     </nav>

@@ -1,0 +1,26 @@
+.social {
+    .social-link {
+
+        .social-icon {}
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .social {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: fixed;
+        top: 60vh;
+        right: 2rem;
+        background-color: transparent;
+
+        .social-link {
+    
+            .social-icon {
+                width: 3.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
