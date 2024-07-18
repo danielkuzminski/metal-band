@@ -47,29 +47,45 @@
 		display: flex;
 		align-items: center;
 		gap: 1.5rem;
-		transition: 3s;
-		/* flex: 3; */
+		transition: .3s;
+		overflow: hidden;
 
-		.nav-link {
-			font-family: "Metal Mania", system-ui;
+
+
+		.links-container {
+			display: flex;
+			align-items: center;
+			gap: 5rem;
+			transition: .5s;
+			/* min-width: 20rem; */
+			/* transform: translateY(-3rem); */
+			/* flex: 3; */
+
+			.nav-link {
+				font-family: "Metal Mania", system-ui;
 				background-image: url("../../assets/flame.jpg");
 				background-size: cover;
 				/* background-position: center; */
-				font-size: 1.8rem;
+				font-size: 2.8rem;
 				background-clip: text;
 				color: transparent;
 				text-align: center;
 				-webkit-text-stroke: 1px yellow;
 				letter-spacing: 0.3rem;
+			}
 		}
 
 		.ham {
+			position: absolute;
+			top: 1.5rem;
+			right: 5rem;
 			width: 5rem;
 			height: 5rem;
 			box-shadow: 0 0 20rem #d5fc14;
 			border-radius: 50%;
 			animation: roll 3s linear infinite;
-			cursor: pointer;
+			/* cursor: pointer; */
+			display: inline;
 		}
 	}
 }
@@ -95,17 +111,24 @@
 		}
 
 		.nav-container {
-			.nav-link {
-				font-family: "Metal Mania", system-ui;
-				background-image: url("../../assets/flame.jpg");
-				background-size: cover;
-				/* background-position: center; */
-				font-size: 3rem;
-				background-clip: text;
-				color: transparent;
-				text-align: center;
-				-webkit-text-stroke: 1px yellow;
-				letter-spacing: 0.3rem;
+			.links-container {
+				overflow: hidden;
+				.nav-link {
+					font-family: "Metal Mania", system-ui;
+					background-image: url("../../assets/flame.jpg");
+					background-size: cover;
+					/* background-position: center; */
+					font-size: 4rem;
+					background-clip: text;
+					color: transparent;
+					text-align: center;
+					-webkit-text-stroke: 1px yellow;
+					letter-spacing: 0.3rem;
+				}
+
+			}
+			.hide {
+				transform: translateY(3rem);
 			}
 		}
 	}

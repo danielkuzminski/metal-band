@@ -42,11 +42,14 @@ export default function Home() {
 				<div className="flames-container"></div>
 			</section>
 			<section className="album">
+				
 				<h2 className="album-title">
+				<img className="fingers" src={heavy} alt="rock fingers" />
 					New Album Out Now <img className="fingers" src={heavy} alt="rock fingers" />
 				</h2>
 				<img src={cover} alt="" className="album-cover" />
 			</section>
+			{/* add gallery section */}
 		</div>
 	)
 }
