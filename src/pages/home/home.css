@@ -78,6 +78,39 @@
 		.flames-container {
 		}
 	}
+
+	.reviews {
+
+		.review {
+
+			.bar {
+
+			}
+
+			.review-brief {
+
+			}
+
+			.review-stars {
+
+				.star {
+					
+				}
+			}
+
+			.reviewer {
+
+			}
+		}
+	}
+
+	.gallery {
+
+		.gallery-container {
+
+			.band-pic {}
+		}
+	}
 }
 
 /* desktop */
@@ -169,11 +202,13 @@
 						font-size: 4rem;
 						margin-bottom: 2rem;
 						text-align: center;
+						transition: 3s;
 
 						.fire {
 							display: inline;
 							width: 3rem;
 							height: 3rem;
+							animation: adjust .3s linear infinite;
 						}
 					}
 					.tour-date {
@@ -259,6 +294,89 @@
 				height: 50rem;
 				margin: 2rem auto;
 				box-shadow: 0 0 2rem yellow;
+			}
+		}
+
+		.reviews {
+			min-height: 75vh;
+			background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(0,0,0, .5)), url('../../assets/album-bg.jpg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 3rem;
+
+			.review {
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+				border-radius: 3rem;
+				gap: 1.2rem;
+
+				.bar {
+					/* display: block;
+					width: 100%;
+					height: .1rem;
+					background-color: #fff; */
+
+				}
+
+				.review-brief {
+					font-size: 1.5rem;
+					line-height: 1.4;
+					font-style: italic;
+					text-indent: 2rem;
+				}
+
+				.review-stars {
+					align-self: center;
+
+					.star {
+						width: 1.2rem;
+						height: 1.2rem;
+					}
+				}
+
+				.reviewer {
+					align-self: center;
+					font-size: 1.6rem;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.gallery {
+			min-height: 100vh;
+			width: 100%;
+			background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(0,0,0, .5)), url('../../assets/album-bg.jpg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			/* flex-direction: row; */
+
+
+			.gallery-container {
+				width: 70%;
+				/* margin: 0 auto; */
+				display: flex;
+				gap: 2rem;
+				/* flex-direction: column; */
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+
+				.band-pic {
+					width: 35rem;
+					/* border: .2rem solid yellow; */
+					box-shadow: 0 0 .9rem yellow;
+				}
 			}
 		}
 	}
