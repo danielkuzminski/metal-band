@@ -1,0 +1,183 @@
+/* mobile */
+.band {
+	.band-name {
+	}
+
+	.band-description-container {
+		.band-description {
+		}
+	}
+
+	.the-band-container {
+		.member-container {
+			.the-band-member {
+			}
+
+			.the-band-member-description {
+			}
+		}
+	}
+
+	.metal {
+		.about-sound-description {
+		}
+	}
+
+	.achievements {
+		.achivement-container {
+			.achivement-description {
+			}
+		}
+	}
+
+	.mission {
+		.legacy {
+		}
+	}
+}
+
+/* desktop */
+@media screen and (min-width: 450px) {
+	.band {
+		width: 100vw;
+		min-height: 100vh;
+		background-image: linear-gradient(
+				180deg,
+				rgba(0, 0, 0, 0.1),
+				rgba(0, 0, 0, 0.5)
+			),
+			url("../../assets/album-bg.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 5rem;
+
+		.band-name {
+			margin-top: 20rem;
+            font-family: "Metal Mania", system-ui;
+			background-image: url("../../assets/flame.jpg");
+			background-size: cover;
+			font-size: 10rem;
+			background-clip: text;
+			color: transparent;
+			text-align: center;
+			-webkit-text-stroke: 1px yellow;
+			padding: 1rem 3rem;
+			margin-bottom: 3rem;
+			animation: flames 8s linear infinite;
+		}
+
+		.band-description-container {
+			width: 70%;
+			display: flex;
+			flex-direction: column;
+            margin-bottom: 10rem;
+
+			.band-description {
+				line-height: 1.7;
+				font-size: 1.8rem;
+				text-indent: 2rem;
+			}
+		}
+
+		.the-band-container {
+			width: 70%;
+			display: flex;
+			flex-direction: column;
+			.member-container {
+                padding: 2rem;
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+				.the-band-member {
+                    font-size: 3rem;
+                    padding: 2rem 0;
+                    text-shadow: 0 0 1rem yellow;
+					.instrument {
+						width: 3.5rem;
+						height: 3.5rem;
+					}
+				}
+
+				.the-band-member-description {
+                    font-size: 2rem;
+                    text-indent: 2rem;
+				}
+			}
+		}
+
+		.metal {
+            width: 70%;
+			.about-sound-description {
+                padding: 2rem;
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.8rem;
+			}
+		}
+
+		.achievements {
+            width: 70%;
+			.achivement-container {
+                margin-top: 3rem;
+
+				.achivement-description {
+                    text-indent: 2rem;
+                    padding: 2rem;
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.8rem;
+				}
+			}
+		}
+
+		.mission {
+            width: 70%;
+			.legacy {
+                text-indent: 2rem;
+                    padding: 2rem;
+                width: 100%;
+                margin-bottom: 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+/* mutual classess */
+.band-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 4.5rem;
+	line-height: 6rem;
+    text-shadow: 0 2rem 2rem red;
+    margin-bottom: 2rem;
+}
+.band-description-title {
+    text-align: center;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	line-height: 5rem;
+}
+
