@@ -1,10 +1,25 @@
+/* mobile */
 .social {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 25vw;
+    background-color: transparent;
+    
+
     .social-link {
 
-        .social-icon {}
+        .social-icon {
+            width: 3.5rem;
+            cursor: pointer;
+        }
     }
 }
 
+
+/* desktop */
 @media screen and (min-width: 450px) {
     .social {
         display: flex;

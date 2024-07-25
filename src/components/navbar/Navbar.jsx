@@ -20,19 +20,14 @@ export default function Navbar() {
 
 	return (
 		<nav className="navbar">
-			{/* <div className="logo-container"> */}
-			{/* <img src={logo} alt="" className="logo" /> */}
-			{/* </div> */}
 			<div className="nav-container">
-				{/* <div className={show ? "links-container" : "hide"}> */}
 				<div className="links-container">
 					<Link className="nav-link" to='/'>Main</Link>
 					<Link className="nav-link" to='/band'>Band</Link>
 					<Link className="nav-link" to='/retail'>Retail</Link>
 					<Link className="nav-link" to='/fans'>Fanzone</Link>
 				</div>
-				{/* <img src={ham} alt="" className="ham" onClick={handleShow} /> */}
-				<img src={ham} alt="" className="ham" />
+				<img src={ham} alt="heavy metal fingers" className="ham" />
 			</div>
 		</nav>
 	)

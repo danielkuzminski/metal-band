@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   font-family: "Sometype Mono", monospace;
   /* background-color: #000; */
-  /* overflow-y: hidden; */
+  /* overflow: hidden; */
 }
 
 html {

@@ -39,8 +39,9 @@
 				rgba(255, 255, 255, 0.1),
 				rgba(0, 0, 0, 0.9)
 			),
-			url("../../assets/band_on_stage_mobile.jpg");
+			url("../../assets/band_on_stage.png");
 		background-size: cover;
+		background-position: center;
 		background-repeat: no-repeat;
 
 		.home__title {
@@ -56,59 +57,248 @@
 			text-align: center;
 			-webkit-text-stroke: 1px yellow;
 			padding: 1rem 3rem;
-			margin-bottom: 7rem;
+			margin-bottom: 9rem;
 			animation: flames 8s linear infinite;
 		}
 	}
 
 	.tour {
-		.tour-card {
-			.tour-city {
-			}
-			.tour-date {
-			}
-			.tour-info {
-			}
-			.tour-cta {
+		min-height: 70vh;
+		width: 100%;
+		background-color: #000;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		/* min-width: 96rem; */
+		gap: 1rem;
+		flex-wrap: wrap;
+
+		.tour-title {
+			font-family: "Metal Mania", system-ui;
+			background-image: url("../../assets/flame.jpg");
+			background-size: cover;
+			/* background-position: center; */
+			font-size: 5rem;
+			background-clip: text;
+			color: transparent;
+			text-align: center;
+			-webkit-text-stroke: 1px yellow;
+			letter-spacing: 0.3rem;
+			margin: 4rem 0;
+			animation: flames 3s linear infinite;
+		}
+
+		.tour-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+
+			.tour-card {
+				flex: 1;
+				width: min(40%, 45%);
+				margin: 1rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				/* transition: 3s; */
+				border: 1px solid #fff;
+				border-radius: 2rem;
+				padding: 5rem;
+				margin: 2rem;
+
+				.tour-city {
+					text-transform: uppercase;
+					font-size: 4rem;
+					margin-bottom: 2rem;
+					text-align: center;
+					transition: 3s;
+
+					.fire {
+						display: inline;
+						width: 3rem;
+						height: 3rem;
+						animation: adjust 0.3s linear infinite;
+					}
+				}
+				.tour-date {
+					text-align: center;
+					font-size: 2rem;
+					margin-bottom: 1.5rem;
+				}
+				.tour-info {
+					text-align: center;
+					font-size: 2rem;
+					margin-bottom: 1.2rem;
+				}
+				.tour-cta {
+					padding: 1rem 2rem;
+					border: 1px solid #fff;
+					cursor: pointer;
+					border-radius: 1rem;
+					text-transform: uppercase;
+					font-size: 2rem;
+					color: #000;
+					background-color: #fff;
+				}
+
+				.tour-cta:hover {
+					color: #fff;
+					background: none;
+				}
 			}
 		}
 	}
 
 	.flames {
+		height: 30vh;
+		background-color: #000;
+
 		.flames-container {
+			object-fit: cover;
+			/* height: 100%; */
+			background-image: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, 0.1),
+					rgb(0, 0, 0, 0.1),
+					rgb(0, 0, 0)
+				),
+				url("../../assets/fire-bg.jpg");
+			height: 100%;
+			background-position: bottom;
+			background-size: cover;
+		}
+	}
+
+	.album {
+		height: 100vh;
+		width: 100%;
+		background-color: #000;
+		display: flex;
+		flex-direction: column;
+		background-image: url("../../assets/album-bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: 0.3s;
+
+		.album-title {
+			font-family: "Metal Mania", system-ui;
+			background-image: url("../../assets/flame.jpg");
+			background-size: cover;
+			/* background-position: center; */
+			font-size: 4rem;
+			background-clip: text;
+			color: transparent;
+			text-align: center;
+			-webkit-text-stroke: 1px yellow;
+			letter-spacing: 0.3rem;
+			padding: 5rem;
+			/* margin: 4rem 0; */
+			display: flex;
+			justify-content: center;
+			gap: 4rem;
+			animation: flames 3s linear infinite;
+			transition: 0.3s;
+			.fingers {
+				width: 4rem;
+				height: 4rem;
+				animation: adjust 0.6s linear infinite;
+			}
+		}
+		.album-cover {
+			width: 90%;
+			/* height: 90%; */
+			margin: 2rem auto;
+			box-shadow: 0 0 2rem yellow;
 		}
 	}
 
 	.reviews {
+		padding-top: 3rem;
+		min-height: 75vh;
+		background-image: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0.1),
+				rgba(0, 0, 0, 0.5)
+			),
+			url("../../assets/album-bg.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 3rem;
 
 		.review {
+			width: 80%;
+			display: flex;
+			flex-direction: column;
+			border-radius: 3rem;
+			gap: 1.2rem;
 
-			.bar {
-
-			}
 
 			.review-brief {
-
+				font-size: 1.5rem;
+				line-height: 1.4;
+				font-style: italic;
+				text-indent: 2rem;
 			}
 
 			.review-stars {
+				align-self: center;
 
 				.star {
-					
+					width: 1.2rem;
+					height: 1.2rem;
 				}
 			}
 
 			.reviewer {
-
+				align-self: center;
+				font-size: 1.6rem;
+				text-transform: uppercase;
 			}
 		}
 	}
 
 	.gallery {
+		padding: 5rem 0;
+		min-height: 100vh;
+		width: 100%;
+		background-image: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0.1),
+				rgba(0, 0, 0, 0.5)
+			),
+			url("../../assets/album-bg.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* flex-direction: row; */
 
 		.gallery-container {
+			width: 70%;
+			/* margin: 0 auto; */
+			display: flex;
+			gap: 2rem;
+			/* flex-direction: column; */
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
 
-			.band-pic {}
+			.band-pic {
+				width: 35rem;
+				/* border: .2rem solid yellow; */
+				box-shadow: 0 0 0.9rem yellow;
+			}
 		}
 	}
 }
@@ -131,6 +321,7 @@
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+			/* background-position: center; */
 			/* background-attachment: fixed; */
 
 			.home__title {
@@ -186,7 +377,7 @@
 
 				.tour-card {
 					flex: 1;
-					min-width: 25%;
+					width: min(45%, 50%);
 					margin: 1rem;
 					display: flex;
 					flex-direction: column;
@@ -195,7 +386,7 @@
 					border: 1px solid #fff;
 					border-radius: 2rem;
 					padding: 5rem;
-					/* margin: 8rem; */
+					margin: 1rem;
 
 					.tour-city {
 						text-transform: uppercase;
@@ -208,7 +399,7 @@
 							display: inline;
 							width: 3rem;
 							height: 3rem;
-							animation: adjust .3s linear infinite;
+							animation: adjust 0.3s linear infinite;
 						}
 					}
 					.tour-date {
@@ -247,7 +438,13 @@
 			.flames-container {
 				object-fit: cover;
 				/* height: 100%; */
-				background-image: linear-gradient(to bottom, rgba(0, 0, 0,.1), rgb(0, 0, 0, .1), rgb(0, 0, 0)) ,url("../../assets/fire-bg.jpg");
+				background-image: linear-gradient(
+						to bottom,
+						rgba(0, 0, 0, 0.1),
+						rgb(0, 0, 0, 0.1),
+						rgb(0, 0, 0)
+					),
+					url("../../assets/fire-bg.jpg");
 				height: 100%;
 				background-position: bottom;
 				background-size: cover;
@@ -260,13 +457,12 @@
 			background-color: #000;
 			display: flex;
 			flex-direction: column;
-			background-image: url('../../assets/album-bg.jpg');
+			background-image: url("../../assets/album-bg.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			transition: .3s;
-			
-			
+			transition: 0.3s;
+
 			.album-title {
 				font-family: "Metal Mania", system-ui;
 				background-image: url("../../assets/flame.jpg");
@@ -284,9 +480,11 @@
 				justify-content: center;
 				gap: 4rem;
 				animation: flames 3s linear infinite;
-				transition: .3s;
+				transition: 0.3s;
 				.fingers {
-					animation: adjust .6s linear infinite;
+					width: 6.4rem;
+				height: 6.4rem;
+					animation: adjust 0.6s linear infinite;
 				}
 			}
 			.album-cover {
@@ -298,8 +496,14 @@
 		}
 
 		.reviews {
+			padding-top: 0;
 			min-height: 75vh;
-			background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(0,0,0, .5)), url('../../assets/album-bg.jpg');
+			background-image: linear-gradient(
+					90deg,
+					rgba(0, 0, 0, 0.1),
+					rgba(0, 0, 0, 0.5)
+				),
+				url("../../assets/album-bg.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -322,7 +526,6 @@
 					width: 100%;
 					height: .1rem;
 					background-color: #fff; */
-
 				}
 
 				.review-brief {
@@ -350,9 +553,15 @@
 		}
 
 		.gallery {
+			padding: 0;
 			min-height: 100vh;
 			width: 100%;
-			background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(0,0,0, .5)), url('../../assets/album-bg.jpg');
+			background-image: linear-gradient(
+					90deg,
+					rgba(0, 0, 0, 0.1),
+					rgba(0, 0, 0, 0.5)
+				),
+				url("../../assets/album-bg.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -360,7 +569,6 @@
 			align-items: center;
 			justify-content: center;
 			/* flex-direction: row; */
-
 
 			.gallery-container {
 				width: 70%;
@@ -375,7 +583,7 @@
 				.band-pic {
 					width: 35rem;
 					/* border: .2rem solid yellow; */
-					box-shadow: 0 0 .9rem yellow;
+					box-shadow: 0 0 0.9rem yellow;
 				}
 			}
 		}
