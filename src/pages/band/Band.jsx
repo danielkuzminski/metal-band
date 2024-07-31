@@ -28,6 +28,7 @@ export default function Band() {
           <p className="the-band-member">
             Axel “The Axe” Thompson <img src={microphone} alt="microphone icon" className="instrument" /><img src={guitar} alt="guitar icon" className="instrument" />
           </p>
+          <div className="profile lead"></div>
           <p className="the-band-member-description">
             Axel’s powerful voice and razor-sharp guitar riffs have been at the
             forefront of Thunderforge’s sound since its inception. His stage
@@ -39,6 +40,7 @@ export default function Band() {
           <p className="the-band-member">
           Jack “The Shredder” Black <img src={guitar} alt="guitar icon" className="instrument" />
           </p>
+          <div className="profile guitar"></div>
           <p className="the-band-member-description">
           Known for his lightning-fast solos and intricate melodies, Jack brings a unique flair to the band’s sound. His technical skill and creative compositions are pivotal to Raiders of Doom signature style.
           </p>
@@ -47,6 +49,7 @@ export default function Band() {
           <p className="the-band-member">
           Leo “The Hammer” Morgan <img src={bass} alt="bass guitar icon" className="instrument" />
           </p>
+          <div className="profile bass"></div>
           <p className="the-band-member-description">
           Leo’s deep, driving bass lines provide the heavy backbone of Raiders of Doom music. His rhythmic precision and powerful stage energy make him a fan favorite.
           </p>
@@ -55,6 +58,7 @@ export default function Band() {
           <p className="the-band-member">
           Ethan “Thunderfoot” Davis <img src={drum} alt="drum set icon" className="instrument" />
           </p>
+          <div className="profile drum"></div>
           <p className="the-band-member-description">
           With his intense drumming and relentless energy, Ethan delivers the thunder in Raiders of Doom. His explosive beats and complex rhythms set the pace for the band’s electrifying performances.
           </p>
