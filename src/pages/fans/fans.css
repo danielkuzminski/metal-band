@@ -1,0 +1,125 @@
+/* mobile */
+.fanzone {
+	width: 100vw;
+	min-height: 100vh;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.1),
+			rgba(0, 0, 0, 0.9)
+		),
+		url("../../assets/band_on_stage1.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	align-items: center;
+
+	.fanzone-title {
+		font-family: "Metal Mania", system-ui;
+		background-image: url("../../assets/flame.jpg");
+		background-size: cover;
+		font-size: 4.5rem;
+		background-clip: text;
+		color: transparent;
+		text-align: center;
+		-webkit-text-stroke: 1px yellow;
+		padding: 1rem 3rem;
+		margin-top: 10rem;
+		margin-bottom: 4rem;
+		animation: flames 8s linear infinite;
+	}
+
+	.fanzone-text {
+		font-size: 2rem;
+		text-indent: 2rem;
+		margin-bottom: 20rem;
+        margin-top: 4rem;
+		font-weight: 600;
+        padding: 3rem;
+        line-height: 1.6;
+	}
+
+	.fanzone-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* border: 1px solid #fff; */
+		box-shadow: 0 0 1rem yellow;
+		border-radius: 1rem;
+		padding: 4rem 6rem;
+		min-width: 90%;
+		backdrop-filter: blur(0.1rem);
+		margin-bottom: 2rem;
+        
+		label {
+			span {
+				display: block;
+				font-size: 1.6rem;
+				text-transform: uppercase;
+				color: yellow;
+			}
+
+			input {
+				padding: 0.5rem 1rem;
+				margin-bottom: 3rem;
+				background: transparent;
+				border: none;
+				border-bottom: 1px solid yellow;
+				/* width: 100%; */
+				color: #fff;
+				font-size: 1.6rem;
+			}
+
+			input:focus {
+				border-bottom: 1px solid yellow;
+				outline: none;
+			}
+		}
+
+		.submit-btn {
+			width: 100%;
+			padding: 1rem 2rem;
+			text-transform: uppercase;
+			background-image: url("../../assets/fire-bg.jpg");
+			background-position: center;
+			background-size: cover;
+			border: 1px solid yellow;
+			box-shadow: 0 0 1rem yellow;
+			color: #fff;
+			font-size: 1.6rem;
+			border-radius: 1rem;
+		}
+	}
+}
+
+@media screen and (min-width: 450px) {
+	.fanzone {
+		padding: 12rem;
+
+		.fanzone-title {
+			font-size: 8rem;
+			margin-top: 0;
+		}
+
+		.fanzone-text {
+			width: 60%;
+            margin-bottom: 8rem;
+            margin-top: 0;
+            padding: 0;
+		}
+
+		.fanzone-form {
+			margin-bottom: 10rem;
+            min-width: 50%;
+
+			.submit-btn {
+                width: 50%;
+			}
+		}
+	}
+}

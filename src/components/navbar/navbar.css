@@ -46,7 +46,7 @@
 		.links-container {
 			display: flex;
 			align-items: center;
-			gap: 1rem;
+			gap: 1.6rem;
 			transition: 0.5s;
 			overflow: hidden;
 			.nav-link {

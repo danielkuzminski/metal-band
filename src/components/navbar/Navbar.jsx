@@ -24,7 +24,7 @@ export default function Navbar() {
 				<div className="links-container">
 					<Link className="nav-link" to='/'>Main</Link>
 					<Link className="nav-link" to='/band'>Band</Link>
-					<Link className="nav-link" to='/retail'>Retail</Link>
+					<Link className="nav-link" to='/retail'>Shop</Link>
 					<Link className="nav-link" to='/fans'>Fanzone</Link>
 				</div>
 				<img src={ham} alt="heavy metal fingers" className="ham" />
